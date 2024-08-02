@@ -1,4 +1,3 @@
-Certainly! Here’s a template for a `README.md` file that you can use to guide users on how to set up and run your React project locally. Adjust the details as needed based on your specific project.
 
 # Employee Management System
 
