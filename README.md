@@ -1,10 +1,9 @@
-
 # Employee Management System
 
 A simple CRUD application for managing employee records, built with React and Vite. This project allows users to view, add, and manage employee details.
 
-
 # Live Preview
+
 `https://ems-sable.vercel.app/`
 
 ## Table of Contents
@@ -48,15 +47,19 @@ A simple CRUD application for managing employee records, built with React and Vi
 
 1. **Environment Variables**
 
-   Create a `.env` file in the root directory of the project with the following content:
+   Due to security practice, .env file is shared as zip file
+   Extract the .zip file to generate a .env file with config for app.
+
+   It should have content:
 
    ```env
-   VITE_BASE_URL=https://free-ap-south-1.cosmocloud.io/development/api
+   VITE_BASE_URL=[Cosmocloud BaseUrl for Api endpoints]
    VITE_PROJECT_ID= [Cosmocloud Project Id for your Project]
    VITE_ENVIRONMENT_ID= [Cosmocloud Environment Id for your Project]
    ```
-  Here is and demonstration to getting started with Cosmocloud `https://tutorials.cosmocloud.io/building-a-todo-app`
-  
+
+   Here is and demonstration to getting started with Cosmocloud `https://tutorials.cosmocloud.io/building-a-todo-app`
+
 2. **Check Vite Configuration**
 
    Ensure the Vite configuration file (`vite.config.js`) is properly set up to handle environment variables. There’s no additional configuration required for most basic setups.
@@ -73,15 +76,16 @@ A simple CRUD application for managing employee records, built with React and Vi
    yarn dev
    ```
 
-   This will start the development server and the application will be available at `http://localhost:3000` (or another port if configured differently).
+   This will start the development server and the application will be available at `http://localhost:{port}` (or another port if configured differently).
 
 2. **Access the Application**
 
-   Open your web browser and navigate to `http://localhost:3000` to view the application.
+   Open your web browser and navigate to `http://localhost:{port}` to view the application.
 
 ## Project Structure
 
 - **`src/`**: Source code for the application.
+
   - **`components/`**: React components.
   - **`context/`**: React context for state management.
   - **`hooks/`**: Custom React hooks.
@@ -106,4 +110,3 @@ Contributions are welcome! Please follow these steps:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-

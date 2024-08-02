@@ -43,6 +43,7 @@ export const EmployeeProvider = ({ children }) => {
         employees,
         addEmployee: addNewEmployee,
         deleteEmployee: deleteExistingEmployee,
+        loadEmployee: loadEmployees,
       }}
     >
       {children}

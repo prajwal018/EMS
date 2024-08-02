@@ -8,14 +8,14 @@ const Sidebar = () => {
         Employee Management System
       </div>
       <Link to="/">
-        <button className="bg-sky-700 rounded-md p-2 mt-4 w-full">
+        <div className="bg-sky-700 text-center rounded-md p-2 mt-4 w-full">
           All Employees
-        </button>
+        </div>
       </Link>
       <Link to="/add_employee">
-        <button className="bg-sky-700 rounded-md p-2 my-4 w-full">
+        <div className="bg-sky-700 text-center rounded-md p-2 my-4 w-full">
           Add Employee
-        </button>
+        </div>
       </Link>
     </div>
   );

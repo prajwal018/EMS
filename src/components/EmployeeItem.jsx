@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import EmployeeInfo from "./EmployeeInfo";
 import ActionButtons from "./ActionButtons";
 
-const EmployeeItem = ({ employee, deleteEmployee }) => {
+const EmployeeItem = ({ index, employee, deleteEmployee }) => {
   return (
-    <li key={employee._id}>
+    <li key={index}>
       <div className="grid grid-cols-4 m-4 border-b-2 border-gray-700 pb-2">
         <Link to={`/employee_details/${employee._id}`} className="col-span-3">
           <EmployeeInfo

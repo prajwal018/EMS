@@ -1,4 +1,3 @@
-// src/App.js
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import EmployeeList from "./components/EmployeeList";
 import EmployeeDetails from "./components/EmployeeDetails";
@@ -7,7 +6,6 @@ import Sidebar from "./components/Sidebar";
 import { EmployeeProvider } from "./context/EmployeeContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// require("dotenv").config();
 const App = () => {
   return (
     <EmployeeProvider>

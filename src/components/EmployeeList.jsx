@@ -1,12 +1,17 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { EmployeeContext } from "../context/EmployeeContext";
 import Header from "./Header";
 import EmployeeItem from "./EmployeeItem";
 import EmployeeNotFound from "./EmployeeNotFound";
 
 const EmployeeList = () => {
-  const { loading, employees, deleteEmployee } = useContext(EmployeeContext);
+  const { loading, employees, deleteEmployee, loadEmployee } =
+    useContext(EmployeeContext);
   const headers = ["Employee Name", "Role", "Employee Id", "Action"];
+
+  useEffect(() => {
+    loadEmployee();
+  });
 
   return (
     <>
@@ -32,6 +37,7 @@ const EmployeeList = () => {
                 {employees.map((employee, index) => (
                   <EmployeeItem
                     key={index}
+                    index={index}
                     employee={employee}
                     deleteEmployee={deleteEmployee}
                   />
