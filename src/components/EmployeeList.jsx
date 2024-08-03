@@ -5,13 +5,8 @@ import EmployeeItem from "./EmployeeItem";
 import EmployeeNotFound from "./EmployeeNotFound";
 
 const EmployeeList = () => {
-  const { loading, employees, deleteEmployee, loadEmployee } =
-    useContext(EmployeeContext);
+  const { loading, employees, deleteEmployee } = useContext(EmployeeContext);
   const headers = ["Employee Name", "Role", "Employee Id", "Action"];
-
-  useEffect(() => {
-    loadEmployee();
-  });
 
   return (
     <>

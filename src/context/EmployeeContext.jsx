@@ -13,7 +13,7 @@ export const EmployeeProvider = ({ children }) => {
 
   useEffect(() => {
     loadEmployees();
-  }, []);
+  });
 
   const loadEmployees = async () => {
     try {
