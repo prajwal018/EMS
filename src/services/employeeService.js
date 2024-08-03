@@ -9,7 +9,7 @@ const header = {
 
 const param = {
   offset: 0,
-  limit: 5,
+  limit: 10,
 };
 
 export const getEmployees = async () => {

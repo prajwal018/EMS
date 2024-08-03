@@ -19,7 +19,10 @@ const AddEmployee = () => {
     emp_role: Yup.string().required("Employee role is required"),
     emp_id: Yup.string()
       .required("Employee ID is required")
-      .matches(/^[0-9]{8}$/, "Invalid Employee Id, must be 8 digits"),
+      .matches(
+        /^EMP[0-9]{6}$/,
+        "Invalid Employee Id, must start with 'EMP' followed by 6 digits"
+      ),
     emp_address: Yup.object({
       area: Yup.string().required("Area is required"),
       city: Yup.string().required("City is required"),
