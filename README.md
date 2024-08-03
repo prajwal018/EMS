@@ -1,3 +1,4 @@
+
 # Employee Management System
 
 A simple CRUD application for managing employee records, built with React and Vite. This project allows users to view, add, and manage employee details.
@@ -5,6 +6,12 @@ A simple CRUD application for managing employee records, built with React and Vi
 # Live Preview
 
 `https://ems-sable.vercel.app/`
+
+## Video Demonstration
+
+[![Watch the video](https://img.youtube.com/vi/bh5XUpxJuHY/0.jpg)](https://youtu.be/bh5XUpxJuHY)
+
+Click on the image above to watch the demonstration video on YouTube.
 
 ## Table of Contents
 
@@ -58,7 +65,7 @@ A simple CRUD application for managing employee records, built with React and Vi
    VITE_ENVIRONMENT_ID= [Cosmocloud Environment Id for your Project]
    ```
 
-   Here is and demonstration to getting started with Cosmocloud `https://tutorials.cosmocloud.io/building-a-todo-app`
+   Here is a demonstration to getting started with Cosmocloud `https://tutorials.cosmocloud.io/building-a-todo-app`
 
 2. **Check Vite Configuration**
 
