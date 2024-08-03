@@ -87,10 +87,7 @@ A simple CRUD application for managing employee records, built with React and Vi
 - **`src/`**: Source code for the application.
 
   - **`components/`**: React components.
-  - **`context/`**: React context for state management.
-  - **`hooks/`**: Custom React hooks.
   - **`services/`**: API services and data fetching.
-  - **`styles/`**: Tailwind CSS configuration and custom styles.
   - **`App.jsx`**: Main application component.
   - **`index.jsx`**: Entry point of the application.
 
