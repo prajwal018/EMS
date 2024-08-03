@@ -9,7 +9,7 @@ const header = {
 
 const param = {
   offset: 0,
-  limit: 50,
+  limit: 5,
 };
 
 export const getEmployees = async () => {
@@ -17,6 +17,7 @@ export const getEmployees = async () => {
     params: param,
     headers: header,
   });
+
   return response.data.data;
 };
 
@@ -24,7 +25,7 @@ export const getEmployeeById = async (emp_id) => {
   const response = await axios.get(`${BASE_URL}/employee/${emp_id}`, {
     headers: header,
   });
-  return response.data.data;
+  return response.data;
 };
 
 export const addEmployee = async (employee) => {

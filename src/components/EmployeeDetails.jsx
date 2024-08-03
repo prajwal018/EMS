@@ -1,15 +1,34 @@
-import { useContext } from "react";
 import { useParams, Link } from "react-router-dom";
-import { EmployeeContext } from "../context/EmployeeContext";
+import { useState, useEffect } from "react";
 import EmployeeNotFound from "./EmployeeNotFound";
 import Avatar from "./Avatar";
 import InfoSection from "./InfoSection";
 import InfoItem from "./InfoItem";
+import { getEmployeeById } from "../services/employeeService";
 
 const EmployeeDetails = () => {
-  const { emp_id } = useParams();
-  const { loading, employees } = useContext(EmployeeContext);
-  const employee = employees.find((emp) => emp._id === emp_id);
+  const { id } = useParams();
+  // console.log(id);
+
+  const [employee, setEmployee] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const getEmployee = async () => {
+      try {
+        const response = await getEmployeeById(id);
+        console.log(response);
+
+        setEmployee(response);
+      } catch (error) {
+        console.error("Error fetching employee details", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    getEmployee();
+  }, [id]);
 
   if (!employee) {
     return (

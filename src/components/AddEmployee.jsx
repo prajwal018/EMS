@@ -1,12 +1,9 @@
-import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { EmployeeContext } from "../context/EmployeeContext";
 import * as Yup from "yup";
 import { toast } from "react-toastify";
+import { addEmployee } from "../services/employeeService";
 
 const AddEmployee = () => {
-  const { addEmployee } = React.useContext(EmployeeContext);
-
   // Define the initial values for the form
   const initialValues = {
     emp_name: "",
